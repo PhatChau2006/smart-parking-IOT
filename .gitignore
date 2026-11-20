@@ -1,0 +1,33 @@
+# Dependencies (reinstall with npm ci)
+node_modules/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+service-account*.json
+firmware/config.h
+*.pem
+*.key
+
+# Runtime data, credentials, sessions and outbox
+/data/
+node-red/.config*
+node-red/context/
+node-red/flows_cred.json
+node-red/.flows*.backup
+*.log
+
+# Local drafts, rendered reports, old packages and old broker configuration
+/tmp/
+/output/
+/smart-parking-nodered-source.zip
+/mosquitto.conf
+
+# Build outputs and editor/OS files
+firmware/build/
+*.bin
+*.elf
+.DS_Store
+Thumbs.db
+~$*

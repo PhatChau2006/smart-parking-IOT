@@ -1,0 +1,16 @@
+{
+  "name": "smart-parking",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node-red --userDir ./node-red --settings ./node-red/settings.js",
+    "check": "node tools/check-project.cjs",
+    "check:runtime": "node tests/runtime-smoke.cjs"
+  },
+  "dependencies": {
+    "@flowfuse/node-red-dashboard": "^1.29.0",
+    "dotenv": "^16.4.7",
+    "node-red": "^4.0.9",
+    "nodemailer": "^10.4.0"
+  }
+}
